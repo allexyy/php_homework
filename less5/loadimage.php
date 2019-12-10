@@ -5,7 +5,7 @@ while($file = readdir($dir)){
     if($file == '.' || $file == '..' || is_dir('img' . $file)){
         continue;
     }
-    echo "<img width='250px'height='175px' src=img/".basename($file)." alt='grapefruit'>";
+    echo "<a href='imgpage.php?&name=".basename($file)."'><img width='250px'height='175px' src=img/".basename($file)." alt='grapefruit'></a>";
     $count++;
 }
 ?>
